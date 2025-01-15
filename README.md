@@ -1,16 +1,10 @@
-# KIM Uno
+# KIM Uno **Improved**
 
 _An improved, portable, software defined dev kit for (retro) microprocessors based on the ATMega328p microcontroller IC._
 
 ![KIM Uno](https://raw.github.com/maxstrauch/kim-uno/master/images/frontshot.jpg)
 
-Back in late 2018 it came to my mind, that I wanted to build a small portable microprocessor dev kit, just like the famous [KIM-1](https://en.wikipedia.org/wiki/KIM-1) from MOS Technology, Inc. and designed by Chuck Peddle who was also involved in creating the 6502 CPU.
-
-Therefore, I designed the KIM Uno as a portable device, which fits in one hand and is powered by two CR2032 batteries. It uses the ATMega328p ("Arduino") microcontroller running at 8 MHz to emulate (or simulate) a desired CPU. This architecture also makes sure, that the emulated CPUs are interchangeable to anything which fits inside the microcontroller's flash memory. So it is a multi-purpose device.
-
-Currently this project emulates an [OISC](https://en.wikipedia.org/wiki/One_instruction_set_computer) with just one instruction `subleq`. The idea came to me when I watched [The Ultimate Apollo Guidance Computer Talk](https://www.youtube.com/watch?v=xx7Lfh5SKUQ) and then discovered [this GitHub repo](https://github.com/davidar/subleq).
-
-There is another pretty interesting project, called the same (KIM Uno), which does a real replica of the 6502 KIM Uno. Check it out [here](https://obsolescence.wixsite.com/obsolescence/kim-uno-summary-c1uuh). The creator even sells the kit. So if you are interested in 6502 and like this project, you should take a look there!
+This is a fork of maxstrauch's Kim-Uno project, which is an emulator of the KIM-1 based on the ATMega328p microcontroller IC.
 
 # Links
 
@@ -34,6 +28,18 @@ This are the essential three documents you'll need to reproduce my KIM Uno. Furt
  - `kicad` - The original KiCad files, so that you can make modifications as you like (see also the License section at the end)
  - `src` - The source code for the microcontroller firmware; you can either use `src/main.hex` and burn it onto your ATMega328p or you can modify `src/main.c`, recompile it (see `src/Makefile`) and then burn it with your own changes
  - `tools` - A little NodeJS based assembler and simulator of the KIM Uno
+
+## Planned improvements in my design
+My first alpha revision (v.0.0.1) aims to have the following improvements over the original design:
+
+- Use appropriate, intuitive footprints, for example the DIP-28 footprint of the microcontroller.
+- Carefully lay out the PCB to be more visually appealing.
+- Modify the design to use 'AA' type batteries, which are cheaper to get, and last longer than CR2032 batteries. There is also the option to use rechargeable batteries for a smaller environmental impact.
+- Modify the ISP header to be a more standard pin layout, and label connections on the silkscreen to make it more intiuitive.
+- Add standard screw holes to the PCB to make mounting in a case easier
+- Use a taller pushbutton to allow the button to protrude out the front of any potential case design.
+
+I would also eventually like to design a case which can be 3d printed, and will be made available here in .stl format once it is ready; I will not publish it until I am satisfied.
 
 # Flashing the firmware
 
@@ -163,16 +169,6 @@ The output is formatted in a way that it can be directly included in the KIM Uno
 And you will be presented with the simulation result and the output expected from the KIM Uno on the display.
 
 # Conclusion
-
-## Design flaws in the PCB design
-
-After completing this project I found a couple of points which are noteworthy and should be addressed in a new revision of the PCB board:
-
-- the ATMega328p's silk screen has not the usual notch where the first pin is located. The DIP-28 footprint does not even have a square pad where the first pin is located. This should definitely be improved with a more detailed silkscreen to prevent confusion
-- the ISP header has no connection labels on the silk screen. This makes it difficult to recognize how to connect it to the ISP
-- the ISP header could be changed into a 2x6 pin header with a standard pin layout to prevent any confusion
-
-Apart from those points I'm pretty happy how it turned out and worked on the first try.
 
 ## Further uses
 
