@@ -30,7 +30,7 @@ This are the essential three documents you'll need to reproduce my KIM Uno. Furt
  - `tools` - A little NodeJS based assembler and simulator of the KIM Uno
 
 ## Planned improvements in my design
-My first alpha revision (v.0.0.1) aims to have the following improvements over the original design:
+My first alpha revision (revision 0.1) aims to have the following improvements over the original design:
 
 - Use appropriate, intuitive footprints, for example the DIP-28 footprint of the microcontroller.
 - Carefully lay out the PCB to be more visually appealing.
