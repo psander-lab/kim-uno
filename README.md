@@ -1,6 +1,6 @@
 # KIM Uno
 
-_A portable, software defined dev kit for (retro) microprocessors_
+_An improved, portable, software defined dev kit for (retro) microprocessors based on the ATMega328p microcontroller IC._
 
 ![KIM Uno](https://raw.github.com/maxstrauch/kim-uno/master/images/frontshot.jpg)
 
