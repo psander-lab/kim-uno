@@ -2,8 +2,6 @@
 
 _An improved, portable, software defined dev kit for (retro) microprocessors based on the ATMega328p microcontroller IC._
 
-![KIM Uno](https://raw.github.com/maxstrauch/kim-uno/master/images/frontshot.jpg)
-
 This is a fork of maxstrauch's Kim-Uno project, which is an emulator of the KIM-1 based on the ATMega328p microcontroller IC.
 
 # Links
