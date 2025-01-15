@@ -39,7 +39,7 @@ My first alpha revision (v.0.0.1) aims to have the following improvements over t
 - Add standard screw holes to the PCB to make mounting in a case easier
 - Use a taller pushbutton to allow the button to protrude out the front of any potential case design.
 
-I would also eventually like to design a case which can be 3d printed, and will be made available here in .stl format once it is ready; I will not publish it until I am satisfied.
+I would also eventually like to design a case which can be 3d printed, and will be made available here in .stl format once it is ready; I will not publish it until I am satisfied that it is in a useable state.
 
 # Flashing the firmware
 
